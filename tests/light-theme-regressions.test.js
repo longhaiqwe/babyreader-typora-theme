@@ -21,6 +21,10 @@ assert.match(ruleFor(".typora-export #write"), /padding:\s*48px 40px;/);
 assert.match(css, /@media \(max-width: 800px\)[\s\S]*#write\s*\{[\s\S]*padding:\s*56px 24px;/);
 assert.match(ruleFor(".md-plain"), /color:\s*var\(--br-text\)/);
 assert.match(
+  ruleFor(".md-link .md-plain,\n.md-link .md-underlined-text,\n.md-url"),
+  /color:\s*var\(--br-accent\)/
+);
+assert.match(
   ruleFor("#write blockquote .md-plain,\n.typora-export blockquote .md-plain"),
   /color:\s*var\(--br-text-muted\)/
 );

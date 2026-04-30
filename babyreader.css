@@ -517,6 +517,7 @@ body,
   color: var(--br-text-muted);
 }
 
+.md-link .md-plain,
 .md-link .md-underlined-text,
 .md-url {
   color: var(--br-accent);

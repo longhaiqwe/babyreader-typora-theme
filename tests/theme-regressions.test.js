@@ -20,6 +20,10 @@ assert.match(
   /color:\s*var\(--br-text-muted\)/
 );
 assert.match(ruleFor(".md-link,\n.md-url"), /color:\s*var\(--br-text-muted\)/);
+assert.match(
+  ruleFor(".md-link .md-plain,\n.md-link .md-underlined-text,\n.md-url"),
+  /color:\s*var\(--br-accent\)/
+);
 
 const fenceLineRule = ruleFor("#write .md-fences pre,\n.typora-export .md-fences pre");
 assert.match(fenceLineRule, /margin:\s*0/);
