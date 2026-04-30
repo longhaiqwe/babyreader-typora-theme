@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BabyReader Typora Theme Preview</title>
+  <link rel="stylesheet" href="./babyreader.css">
+</head>
+<body>
+  <main id="write">
+    <h1>阅读是一座随身携带的避难所</h1>
+    <p><strong>BabyReader for Typora</strong> 是一个忠于 BabyReader 原项目的深色阅读主题。它保留暖黑背景、米色正文、陶土橙强调色，以及适合中文长文的宽松行距。</p>
+    <p>这是一段普通正文，用来检查长句、标点和中英文混排的呼吸感。链接会使用 <a href="https://github.com/KingJing1/babyreader">BabyReader</a> 的陶土橙，行内代码会像 <code>#DA7756</code> 这样低调浮出来。</p>
+
+    <blockquote>
+      <p>注意力是阅读的表面。每一个额外控件，都像在安静房间里忽然亮起的一盏灯。</p>
+    </blockquote>
+
+    <h2>长文优先</h2>
+    <p>版心控制在约 720px，段落字号接近 18px，行高接近 1.9。目标不是信息密度最高，而是让眼睛愿意停留。</p>
+
+    <h3>列表、任务和强调</h3>
+    <ul>
+      <li>暖黑背景不是纯黑，降低夜间对比刺激。</li>
+      <li>陶土橙只用于链接、引用边线、分割线和选区。</li>
+      <li>标题使用宋体优先的字体栈，正文使用系统无衬线。</li>
+    </ul>
+    <ul>
+      <li class="task-list-item"><input type="checkbox" checked> 保留 BabyReader 的深色变量。</li>
+      <li class="task-list-item"><input type="checkbox"> 放进 Typora 主题文件夹后重启 Typora。</li>
+    </ul>
+
+    <h3>代码块</h3>
+    <pre><code>:root {
+  --br-bg: #1e1e1e;
+  --br-text: #e8e0d4;
+  --br-accent: #da7756;
+}</code></pre>
+
+    <h3>表格</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>元素</th>
+          <th>BabyReader 气质</th>
+          <th>Typora 适配</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>正文</td>
+          <td>宽松、暖色、长阅读</td>
+          <td>720px 版心和 1.9 行高</td>
+        </tr>
+        <tr>
+          <td>引用</td>
+          <td>低调深灰面</td>
+          <td>左侧陶土橙细线</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <p><mark>选中文本、高亮和焦点色</mark> 都保持克制，不把注意力从正文上抢走。</p>
+  </main>
+</body>
+</html>

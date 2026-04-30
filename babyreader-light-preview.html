@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BabyReader Light Typora Theme Preview</title>
+  <link rel="stylesheet" href="./babyreader-light.css">
+</head>
+<body>
+  <main id="write">
+    <h1>让文字回到白纸上</h1>
+    <p><strong>BabyReader Light for Typora</strong> 是深色 BabyReader 的浅色 companion。它不是纯白默认主题，而是借用右图那种公众号预览的白纸、暖金边线和浅米色块，保留 BabyReader 的安静版心。</p>
+    <p>正文使用深暖灰，链接使用 <a href="https://github.com/KingJing1/babyreader">暖金色强调</a>，行内代码像 <code>#c4a06a</code> 一样轻轻浮出来，不打断阅读。</p>
+
+    <blockquote>
+      <p>如果深色版像夜间阅读器，浅色 companion 更像一张被整理好的白纸。它应该清楚，但不能刺眼。</p>
+    </blockquote>
+
+    <hr>
+
+    <h2>是 companion，不是反相</h2>
+    <p>浅色版沿用 720px 版心、宋体标题、1.9 行高、克制链接和代码块。变化主要在色彩层级：背景更接近米白，正文落在暖灰，强调色从陶土橙转成更适合白底的暖金。</p>
+
+    <h3>适合的 Markdown 元素</h3>
+    <ul>
+      <li>引用块使用浅米底和暖金边线，参考附图右侧的预览框。</li>
+      <li>二级标题保留细分割线，形成文章结构。</li>
+      <li>代码块保持整体盒子，不再出现一行一个框。</li>
+    </ul>
+
+    <pre><code>:root {
+  --br-bg: #fbfaf7;
+  --br-paper: #ffffff;
+  --br-accent: #c4a06a;
+}</code></pre>
+
+    <table>
+      <thead>
+        <tr>
+          <th>层级</th>
+          <th>颜色</th>
+          <th>用途</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>白纸</td>
+          <td>#ffffff</td>
+          <td>正文阅读区域</td>
+        </tr>
+        <tr>
+          <td>暖金</td>
+          <td>#c4a06a</td>
+          <td>链接、边线、分割线</td>
+        </tr>
+        <tr>
+          <td>浅米</td>
+          <td>#fcf8f2</td>
+          <td>引用与低调块面</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
