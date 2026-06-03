@@ -24,11 +24,17 @@ assert.match(
   ruleFor(".md-link .md-plain,\n.md-link .md-underlined-text,\n.md-url"),
   /color:\s*var\(--br-accent\)/
 );
+assert.match(ruleFor("#write img,\n.typora-export img"), /margin:\s*0/);
 
 const fenceLineRule = ruleFor("#write .md-fences pre,\n.typora-export .md-fences pre");
 assert.match(fenceLineRule, /margin:\s*0/);
 assert.match(fenceLineRule, /padding:\s*0/);
 assert.match(fenceLineRule, /border:\s*0/);
 assert.match(fenceLineRule, /background:\s*transparent/);
+
+assert.match(ruleFor(".md-image > .md-meta"), /caret-color:\s*var\(--br-text-strong\)/);
+assert.match(ruleFor(".md-image > .md-meta"), /color:\s*inherit/);
+assert.doesNotMatch(ruleFor(".md-image > .md-meta"), /background:/);
+assert.match(ruleFor(".mac-os #write"), /caret-color:\s*var\(--br-accent\)/);
 
 console.log("theme regressions ok");
