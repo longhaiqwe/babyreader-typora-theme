@@ -250,8 +250,8 @@ body,
 
 #write blockquote,
 .typora-export blockquote {
-  margin: 24px 0;
-  padding: 20px 24px;
+  margin: 18px 0;
+  padding: 16px 22px;
   border-left: 3px solid var(--br-accent);
   border-radius: 0 8px 8px 0;
   background: var(--br-surface-alt);
@@ -262,7 +262,7 @@ body,
 
 #write blockquote p,
 .typora-export blockquote p {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: var(--br-text-muted);
   font-size: 1.0625rem;
   line-height: 1.75;
@@ -276,6 +276,23 @@ body,
 #write blockquote .md-plain,
 .typora-export blockquote .md-plain {
   color: var(--br-text-muted);
+}
+
+#write blockquote a,
+.typora-export blockquote a {
+  border-bottom-color: var(--br-accent);
+}
+
+#write blockquote .md-link .md-plain,
+#write blockquote .md-link .md-underlined-text,
+#write blockquote .md-url,
+.typora-export blockquote .md-link .md-plain,
+.typora-export blockquote .md-link .md-underlined-text,
+.typora-export blockquote .md-url {
+  text-decoration: underline;
+  text-decoration-color: var(--br-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 #write code,
